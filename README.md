@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Photo PDF Studio" width="100%" />
+<img src="assets/banner.svg" alt="Photo PDF Studio" width="100%" />
 
 # Photo PDF Studio
 
@@ -8,33 +8,44 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-EXE-0078D6?logo=windows&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![License](https://img.shields.io/badge/License-MIT-2ea44f.svg)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-6e40c9)
+
+**[⬇ Скачать PhotoPDFStudio.exe](dist/PhotoPDFStudio.exe)**
 
 </div>
 
-## 📥 Скачать для Windows
+## 🚀 О проекте
 
-Готовый файл находится в репозитории:
-
-**`dist/PhotoPDFStudio.exe`**
-
-Также GitHub Actions автоматически собирает свежий `.exe` из исходников. Откройте **Actions → Build Windows EXE → последний успешный запуск → Artifacts → PhotoPDFStudio-Windows**.
+**Photo PDF Studio** — локальное приложение для Windows, которое позволяет загрузить набор фотографий, визуально выставить их порядок и объединить в один PDF-файл. Фотографии никуда не отправляются: конвертация происходит на вашем компьютере.
 
 ## ✨ Возможности
 
-- JPG, JPEG, PNG, WebP, BMP и TIFF;
-- все изображения отображаются сразу карточками с миниатюрами;
-- имя, разрешение, формат и размер каждого файла;
-- **Drag & Drop** для изменения порядка страниц;
-- кнопки перемещения вверх и вниз;
-- крупный предпросмотр выбранной фотографии;
-- удаление отдельных изображений и очистка списка;
-- автоматический учёт EXIF-поворота;
-- корректная обработка прозрачных PNG/WebP;
-- экспорт всех фотографий в один PDF;
-- удобные горячие клавиши.
+- поддержка **JPG, JPEG, PNG, WebP, BMP и TIFF**;
+- все фотографии сразу отображаются в виде удобных карточек;
+- миниатюра и **название каждого файла**;
+- отображение разрешения, формата и размера изображения;
+- **Drag & Drop** — зажмите карточку и перетащите её выше или ниже;
+- кнопки перемещения страниц вверх/вниз;
+- большой предпросмотр выбранного изображения;
+- удаление отдельных фотографий и полная очистка списка;
+- автоматический учёт **EXIF-поворота**;
+- прозрачный фон PNG/WebP корректно заменяется белым при экспорте;
+- объединение всех страниц в **один PDF**;
+- удобные горячие клавиши;
+- готовая Windows-версия `.exe`.
 
-## 🚀 Запуск из исходников
+## 📥 Windows EXE
+
+Самый простой вариант — скачать готовый файл:
+
+### **[PhotoPDFStudio.exe](dist/PhotoPDFStudio.exe)**
+
+GitHub Actions также автоматически пересобирает Windows-версию из актуального `app.py`. Свежую сборку можно получить во вкладке **Actions → Build Windows EXE → Artifacts → PhotoPDFStudio-Windows**.
+
+## 🐍 Запуск из исходников
+
+Требуется Python 3.10 или новее.
 
 ```bash
 git clone https://github.com/SlavTim998/From_Jpg_to_pdf.git
@@ -50,18 +61,22 @@ python app.py
 | `Ctrl + O` | Добавить фотографии |
 | `Ctrl + S` | Создать PDF |
 | `Delete` | Удалить выбранную фотографию |
-| `Alt + ↑` | Переместить выше |
-| `Alt + ↓` | Переместить ниже |
+| `Alt + ↑` | Переместить фотографию выше |
+| `Alt + ↓` | Переместить фотографию ниже |
 
-## 🛠️ Сборка `.exe`
+## 🔨 Сборка `.exe` вручную
 
 ```bash
 python -m pip install -r requirements.txt
 python -m pip install pyinstaller
-pyinstaller --noconsole --onefile --name PhotoPDFStudio app.py
+pyinstaller --noconsole --onefile --clean --name PhotoPDFStudio app.py
 ```
 
-После сборки файл будет находиться в `dist/PhotoPDFStudio.exe`.
+Результат:
+
+```text
+dist/PhotoPDFStudio.exe
+```
 
 ## 📁 Структура проекта
 
@@ -70,8 +85,8 @@ From_Jpg_to_pdf/
 ├── app.py
 ├── requirements.txt
 ├── assets/
-│   ├── banner.png
-│   └── icon.png
+│   ├── banner.svg
+│   └── icon.svg
 ├── dist/
 │   └── PhotoPDFStudio.exe
 ├── .github/
@@ -82,6 +97,22 @@ From_Jpg_to_pdf/
 └── README.md
 ```
 
+## 🔒 Конфиденциальность
+
+Приложение работает локально. Выбранные изображения не загружаются на внешние серверы и используются только для создания PDF на вашем компьютере.
+
+## 🤝 Open Source
+
+Проект открыт для улучшений. Можно создавать Issues, предлагать изменения интерфейса, новые настройки PDF и поддержку дополнительных форматов.
+
 ## 📄 Лицензия
 
-MIT — см. [LICENSE](LICENSE).
+Распространяется по лицензии **MIT** — см. [`LICENSE`](LICENSE).
+
+---
+
+<div align="center">
+
+Made with Python • Photo PDF Studio
+
+</div>
