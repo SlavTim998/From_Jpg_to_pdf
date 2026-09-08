@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071525"/><stop offset="1" stop-color="#123d78"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#55d7ff"/><stop offset="1" stop-color="#2580ff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1600" height="700" rx="38" fill="url(#bg)"/>
+  <circle cx="1420" cy="90" r="260" fill="#1d75d5" opacity=".18"/><circle cx="1220" cy="640" r="330" fill="#2563eb" opacity=".12"/>
+  <g transform="translate(90 105)" filter="url(#shadow)">
+    <g transform="rotate(-7 210 190)"><rect x="10" y="80" width="300" height="250" rx="24" fill="#fff"/><rect x="32" y="103" width="256" height="204" rx="14" fill="url(#blue)"/><path d="M32 250l70-72 52 48 57-72 77 96v57H32z" fill="#174b83"/><circle cx="230" cy="145" r="22" fill="#ffd56b"/></g>
+    <g transform="translate(215 5)"><path d="M0 0h250l95 95v330H0z" fill="#f8fafc"/><path d="M250 0v95h95" fill="#dfe7f2"/><path d="M88 177c25-60 70-57 93 0 21 56 57 75 97 89-68 3-118-15-150-55-30 36-57 58-91 68 23-27 40-59 51-102z" fill="#e1252e"/><rect x="63" y="303" width="220" height="72" rx="18" fill="#e1252e"/><text x="173" y="351" text-anchor="middle" font-family="Segoe UI,Arial" font-size="48" font-weight="800" fill="#fff">PDF</text></g>
+    <path d="M270 70c65-70 135-75 195-28" fill="none" stroke="url(#blue)" stroke-width="28" stroke-linecap="round"/><path d="M448 18l59 42-69 18z" fill="#4ac9ff"/>
+  </g>
+  <g font-family="Segoe UI,Arial" fill="#fff"><text x="600" y="190" font-size="78" font-weight="800">Photo PDF <tspan fill="#43b9ff">Studio</tspan></text><text x="604" y="245" font-size="29" fill="#c9d7e8">Фотографии → один PDF. Быстро, локально и удобно.</text>
+    <g font-size="25"><text x="605" y="340">✓ Drag &amp; Drop сортировка</text><text x="605" y="390">✓ Миниатюры и предпросмотр</text><text x="605" y="440">✓ JPG / PNG / WebP / TIFF</text><text x="990" y="340">✓ Экспорт в один PDF</text><text x="990" y="390">✓ Desktop-интерфейс</text><text x="990" y="440">✓ Windows EXE</text></g>
+    <rect x="600" y="505" width="360" height="72" rx="18" fill="#2388ff"/><text x="780" y="551" text-anchor="middle" font-size="28" font-weight="700">Open Source • Python</text>
+    <text x="605" y="625" font-size="22" fill="#8fb5df">GitHub: SlavTim998/From_Jpg_to_pdf</text>
+  </g>
+</svg>
