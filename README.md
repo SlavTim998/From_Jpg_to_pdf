@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Photo PDF Studio" width="100%" />
-
 # Photo PDF Studio
 
 **Современное desktop-приложение на Python для объединения фотографий в один PDF.**
